@@ -1,0 +1,200 @@
+Case 1: Impossible
+Case 2: Impossible
+Case 3: 11 2
+Case 4: 104729 2
+Case 5: Impossible
+Case 6: Impossible
+Case 7: 11 4
+Case 8: 104729 4
+Case 9: Impossible
+Case 10: Impossible
+Case 11: 33 2
+Case 12: 314187 2
+Case 13: Impossible
+Case 14: Impossible
+Case 15: 11 8
+Case 16: 104729 8
+Case 17: Impossible
+Case 18: Impossible
+Case 19: 55 2
+Case 20: 523645 2
+Case 21: Impossible
+Case 22: Impossible
+Case 23: 33 4
+Case 24: 314187 4
+Case 25: Impossible
+Case 26: Impossible
+Case 27: 77 2
+Case 28: 733103 2
+Case 29: Impossible
+Case 30: Impossible
+Case 31: 11 16
+Case 32: 104729 16
+Case 33: Impossible
+Case 34: Impossible
+Case 35: 99 2
+Case 36: 942561 2
+Case 37: Impossible
+Case 38: Impossible
+Case 39: 55 4
+Case 40: 523645 4
+Case 41: Impossible
+Case 42: Impossible
+Case 43: 121 2
+Case 44: 1152019 2
+Case 45: Impossible
+Case 46: Impossible
+Case 47: 33 8
+Case 48: 314187 8
+Case 49: Impossible
+Case 50: Impossible
+Case 51: 143 2
+Case 52: 1361477 2
+Case 53: Impossible
+Case 54: Impossible
+Case 55: 77 4
+Case 56: 733103 4
+Case 57: Impossible
+Case 58: Impossible
+Case 59: 165 2
+Case 60: 1570935 2
+Case 61: Impossible
+Case 62: Impossible
+Case 63: 11 32
+Case 64: 104729 32
+Case 65: Impossible
+Case 66: Impossible
+Case 67: 187 2
+Case 68: 1780393 2
+Case 69: Impossible
+Case 70: Impossible
+Case 71: 99 4
+Case 72: 942561 4
+Case 73: Impossible
+Case 74: Impossible
+Case 75: 209 2
+Case 76: 1989851 2
+Case 77: Impossible
+Case 78: Impossible
+Case 79: 55 8
+Case 80: 523645 8
+Case 81: Impossible
+Case 82: Impossible
+Case 83: 231 2
+Case 84: 2199309 2
+Case 85: Impossible
+Case 86: Impossible
+Case 87: 121 4
+Case 88: 1152019 4
+Case 89: Impossible
+Case 90: Impossible
+Case 91: 253 2
+Case 92: 2408767 2
+Case 93: Impossible
+Case 94: Impossible
+Case 95: 33 16
+Case 96: 314187 16
+Case 97: Impossible
+Case 98: Impossible
+Case 99: 275 2
+Case 100: 2618225 2
+Case 101: Impossible
+Case 102: Impossible
+Case 103: 143 4
+Case 104: 1361477 4
+Case 105: Impossible
+Case 106: Impossible
+Case 107: 297 2
+Case 108: 2827683 2
+Case 109: Impossible
+Case 110: Impossible
+Case 111: 77 8
+Case 112: 733103 8
+Case 113: Impossible
+Case 114: Impossible
+Case 115: 319 2
+Case 116: 3037141 2
+Case 117: Impossible
+Case 118: Impossible
+Case 119: 165 4
+Case 120: 1570935 4
+Case 121: Impossible
+Case 122: Impossible
+Case 123: 341 2
+Case 124: 3246599 2
+Case 125: Impossible
+Case 126: Impossible
+Case 127: 11 64
+Case 128: 104729 64
+Case 129: Impossible
+Case 130: Impossible
+Case 131: 363 2
+Case 132: 3456057 2
+Case 133: Impossible
+Case 134: Impossible
+Case 135: 187 4
+Case 136: 1780393 4
+Case 137: Impossible
+Case 138: Impossible
+Case 139: 385 2
+Case 140: 3665515 2
+Case 141: Impossible
+Case 142: Impossible
+Case 143: 99 8
+Case 144: 942561 8
+Case 145: Impossible
+Case 146: Impossible
+Case 147: 407 2
+Case 148: 3874973 2
+Case 149: Impossible
+Case 150: Impossible
+Case 151: 209 4
+Case 152: 1989851 4
+Case 153: Impossible
+Case 154: Impossible
+Case 155: 429 2
+Case 156: 4084431 2
+Case 157: Impossible
+Case 158: Impossible
+Case 159: 55 16
+Case 160: 523645 16
+Case 161: Impossible
+Case 162: Impossible
+Case 163: 451 2
+Case 164: 4293889 2
+Case 165: Impossible
+Case 166: Impossible
+Case 167: 231 4
+Case 168: 2199309 4
+Case 169: Impossible
+Case 170: Impossible
+Case 171: 473 2
+Case 172: 4503347 2
+Case 173: Impossible
+Case 174: Impossible
+Case 175: 121 8
+Case 176: 1152019 8
+Case 177: Impossible
+Case 178: Impossible
+Case 179: 495 2
+Case 180: 4712805 2
+Case 181: Impossible
+Case 182: Impossible
+Case 183: 253 4
+Case 184: 2408767 4
+Case 185: Impossible
+Case 186: Impossible
+Case 187: 517 2
+Case 188: 4922263 2
+Case 189: Impossible
+Case 190: Impossible
+Case 191: 33 32
+Case 192: 314187 32
+Case 193: Impossible
+Case 194: Impossible
+Case 195: 539 2
+Case 196: 5131721 2
+Case 197: Impossible
+Case 198: Impossible
+Case 199: 275 4
+Case 200: 2618225 4
