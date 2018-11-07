@@ -8,7 +8,6 @@ typedef long long ll;
 
 int main(){
     int t;
-    freopen("in.txt", "w", stdout);
     scanf("%d", &t);
     for(int tes = 1; tes <= t; tes++){
         ll a, b, ans = 0;
