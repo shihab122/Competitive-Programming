@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 /*{{{*/
-=======
->>>>>>> 1c9edf77e64d0c29f8079f67442c880ddcca26a0
 #include<cstdio>
 #include<cstdlib>
 #include<cstring>
@@ -34,10 +31,6 @@
 #define LEN(X) strlen(X)
 #define F first
 #define S second
-<<<<<<< HEAD
-=======
-#define wa cout<<"here"<<endl
->>>>>>> 1c9edf77e64d0c29f8079f67442c880ddcca26a0
 using namespace std;
 typedef long long LL;
 typedef unsigned long long ULL;
@@ -57,15 +50,9 @@ void _R(char *x) { scanf("%s", x); }
 void R() {}
 template<class T, class... U> void R(T &head, U &... tail) { _R(head); R(tail...); }
 template<class T> void _W(const T &x) { cout << x; }
-<<<<<<< HEAD
-void _W(const int &x) { printf("%d ", x); }
-void _W(const LL &x) { printf("%lld ", x); }
-void _W(const double &x) { printf("%.16f ", x); }
-=======
 void _W(const int &x) { printf("%d", x); }
 void _W(const LL &x) { printf("%lld", x); }
 void _W(const double &x) { printf("%.16f", x); }
->>>>>>> 1c9edf77e64d0c29f8079f67442c880ddcca26a0
 void _W(const char &x) { putchar(x); }
 void _W(const char *x) { printf("%s", x); }
 template<class T,class U> void _W(const pair<T,U> &x) {_W(x.F); putchar(' '); _W(x.S);}
@@ -78,32 +65,9 @@ template<class T, class... U> void W(const T &head, const U &... tail) { _W(head
 #endif
 int MOD = 1e9+7;
 void ADD(LL& x,LL v){x=(x+v)%MOD;if(x<0)x+=MOD;}
-<<<<<<< HEAD
-const int SIZE = 1e6+10;
-
-int main(){
-=======
 /*}}}*/
 const int SIZE = 1e6+10;
 int main(){
-    int n, m;
-    scanf("%d %d", &n, &m);
-    int a[m], b[m], ans1 = 0, ans2 = 0;
-    REP(i, m) _R(a[i]), b[i] = a[i];
-    for(int j = 1; j <= n; j++){
-        int mx = -(1 << 30), mn = (1 << 30), id;
-        for(int i = 0; i < m; i++)
-            if(mx < a[i] && a[i] > 0) mx = a[i], id = i;
-        ans1 += mx, a[id]--;
-
-        for(int i = 0; i < m; i++)
-            if(mn > b[i] && b[i] > 0) mn = b[i], id = i;
-        ans2 += mn, b[id]--;
-
-    }
-
-    printf("%d %d\n", ans1, ans2);
->>>>>>> 1c9edf77e64d0c29f8079f67442c880ddcca26a0
 
     return 0;
 }
