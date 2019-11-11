@@ -68,13 +68,20 @@ void ADD(LL& x,LL v){x=(x+v)%MOD;if(x<0)x+=MOD;}
 /*}}}*/
 const int SIZE = 1e6+10;
 int main(){
-    int n;
+    int n, sum = 0;
+    VI vc;
+    map<int, int> mp;
     _R(n);
-    n = n - 10;
-    if(n <= 0) _W(0);
-    else if(n < 10 || n == 11) _W(4);
-    else if(n == 10) _W(15);
-    else _W(0);
-
+    REP(i, n){
+        int a;
+        _R(a);
+        if(mp[a] == 0) vc.PB(a);
+        mp[a]++;
+        sum += a;
+    }
+    int ans = 0;
+    REP(i, vc.size())
+        if((sum - vc[i]) % 2 == 0) ans += mp[vc[i]];
+    _W(ans);
     return 0;
 }

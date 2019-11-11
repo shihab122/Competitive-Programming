@@ -70,11 +70,12 @@ const int SIZE = 1e6+10;
 int main(){
     int n;
     _R(n);
-    n = n - 10;
-    if(n <= 0) _W(0);
-    else if(n < 10 || n == 11) _W(4);
-    else if(n == 10) _W(15);
-    else _W(0);
-
+    REP(i, n){
+        LL a, b;
+        _R(a), _R(b);
+        LL x = abs(a - b);
+        if(x != 1) puts("YES\n");
+        else puts("NO\n");
+    }
     return 0;
 }
