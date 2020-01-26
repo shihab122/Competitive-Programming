@@ -50,13 +50,12 @@ void _R(char *x) { scanf("%s", x); }
 void R() {}
 template<class T, class... U> void R(T &head, U &... tail) { _R(head); R(tail...); }
 template<class T> void _W(const T &x) { cout << x; }
-void _W(const int &x) { printf("%d\n", x); }
-void _W(const LL &x) { printf("%lld\n", x); }
-void _W(const double &x) { printf("%.16f\n", x); }
+void _W(const int &x) { printf("%d ", x); }
+void _W(const LL &x) { printf("%lld ", x); }
+void _W(const double &x) { printf("%.16f ", x); }
 void _W(const char &x) { putchar(x); }
 void _W(const char *x) { printf("%s", x); }
 template<class T,class U> void _W(const pair<T,U> &x) {_W(x.F); putchar(' '); _W(x.S);}
-void W() {}
 template<class T, class... U> void W(const T &head, const U &... tail) { _W(head); putchar(sizeof...(tail) ? ' ' : '\n'); W(tail...); }
 #ifdef HOME
  #define DEBUG(...) {printf("# ");printf(__VA_ARGS__);puts("");}
@@ -67,14 +66,57 @@ int MOD = 1e9+7;
 void ADD(LL& x,LL v){x=(x+v)%MOD;if(x<0)x+=MOD;}
 /*}}}*/
 const int SIZE = 1e6+10;
-int main(){
-    int n;
-    _R(n);
-    n = n - 10;
-    if(n <= 0) _W(0);
-    else if(n < 10 || n == 11) _W(4);
-    else if(n == 10) _W(15);
-    else _W(0);
 
+bool visit[101];
+VI adj[101];
+int first[101], second[101];
+
+void bfs(int a, int *time){
+    queue<int> Q;
+    Q.push(a);
+    visit[a] = true;
+    time[a] = 0;
+    while(!Q.empty()){
+        a = Q.front();
+        Q.pop();
+        for(int i = 0; i < adj[a].size(); i++){
+            int b = adj[a][i];
+            if(!visit[b]){
+                Q.push(b);
+                time[b] = time[a] + 1;
+                visit[b] = true;
+            }
+        }
+    }
+}
+
+
+int main(){
+    int t;
+    _R(t);
+    FOR(tes, 1, t){
+        int n, r;
+        _R(n);
+        _R(r);
+        MS0(first);
+        MS0(second);
+        FOR(i, 0, n) adj[i].clear();
+
+        FOR(i, 1, r){
+            int u, v;
+            _R(u), _R(v);
+            adj[u].push_back(v);
+            adj[v].push_back(u);
+        }
+        int s, d;
+        _R(s), _R(d);
+        memset(visit, false, sizeof(visit));
+        bfs(s, first);
+        memset(visit, false, sizeof(visit));
+        bfs(d, second);
+        int ans = 0;
+        FOR(i, 0, n) ans = max(ans, first[i] + second[i]);
+        printf("Case %d: %d\n", tes, ans);
+    }
     return 0;
 }

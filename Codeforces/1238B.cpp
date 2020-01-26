@@ -68,13 +68,26 @@ void ADD(LL& x,LL v){x=(x+v)%MOD;if(x<0)x+=MOD;}
 /*}}}*/
 const int SIZE = 1e6+10;
 int main(){
-    int n;
-    _R(n);
-    n = n - 10;
-    if(n <= 0) _W(0);
-    else if(n < 10 || n == 11) _W(4);
-    else if(n == 10) _W(15);
-    else _W(0);
+    int q;
+    _R(q);
+    REP(i, q){
+        LL n, r;
+        _R(n), _R(r);
+        LL a, ans = 0;
+        set<LL> st;
+        set<LL> :: reverse_iterator it;
+        REP(j, n){
+            _R(a);
+            st.insert(a);
+        }
 
+        for(it=st.rbegin(); it != st.rend(); it++){
+            LL b = *it;
+            LL c = b - (r * ans);
+            if( c <= 0 ) break;
+            ans++;
+        }
+        _W(ans);
+    }
     return 0;
 }

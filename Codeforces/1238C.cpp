@@ -67,14 +67,39 @@ int MOD = 1e9+7;
 void ADD(LL& x,LL v){x=(x+v)%MOD;if(x<0)x+=MOD;}
 /*}}}*/
 const int SIZE = 1e6+10;
-int main(){
-    int n;
-    _R(n);
-    n = n - 10;
-    if(n <= 0) _W(0);
-    else if(n < 10 || n == 11) _W(4);
-    else if(n == 10) _W(15);
-    else _W(0);
 
+LL h, n;
+map<LL, int> visit;
+LL dfs(LL a, LL x){
+    if(a <= 0) return x;
+    int p = x, q = x;
+    if(a == h){
+        if(visit[a - 1] == 0) return dfs(a - 2, x);
+        else  return dfs(a - 1, x + 1);
+    }
+    else{
+        if(visit[a - 1] == 1 && visit[a - 2] == 0 && a - 2 > 0){
+            LL u = dfs(a - 1, x + 1);
+            LL v = dfs(a - 2, x + 1);
+            return min(u, v);
+        }
+        else if(visit[a - 1] == 0) return dfs(a - 1, x);
+        else return dfs(a - 2, x);
+    }
+}
+
+int main(){
+    int q;
+    _R(q);
+    REP(i, q){
+        _R(h), _R(n);
+        REP(j, n){
+            int a;
+            _R(a);
+            visit[a] = 1;
+        }
+        _W(dfs(h, 0LL));
+        visit.clear();
+    }
     return 0;
 }

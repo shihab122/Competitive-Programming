@@ -68,13 +68,11 @@ void ADD(LL& x,LL v){x=(x+v)%MOD;if(x<0)x+=MOD;}
 /*}}}*/
 const int SIZE = 1e6+10;
 int main(){
-    int n;
-    _R(n);
-    n = n - 10;
-    if(n <= 0) _W(0);
-    else if(n < 10 || n == 11) _W(4);
-    else if(n == 10) _W(15);
-    else _W(0);
-
+    int a, j = 1;
+    _R(a);
+    REP(i, (a * a) / 2){
+        if(i % (a / 2) == 0 && i > 0) _W("\n");
+        printf("%d %d ", i + 1, a * a - i);
+    }
     return 0;
 }

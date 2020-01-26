@@ -50,9 +50,9 @@ void _R(char *x) { scanf("%s", x); }
 void R() {}
 template<class T, class... U> void R(T &head, U &... tail) { _R(head); R(tail...); }
 template<class T> void _W(const T &x) { cout << x; }
-void _W(const int &x) { printf("%d\n", x); }
-void _W(const LL &x) { printf("%lld\n", x); }
-void _W(const double &x) { printf("%.16f\n", x); }
+void _W(const int &x) { printf("%d ", x); }
+void _W(const LL &x) { printf("%lld ", x); }
+void _W(const double &x) { printf("%.16f ", x); }
 void _W(const char &x) { putchar(x); }
 void _W(const char *x) { printf("%s", x); }
 template<class T,class U> void _W(const pair<T,U> &x) {_W(x.F); putchar(' '); _W(x.S);}
@@ -68,13 +68,29 @@ void ADD(LL& x,LL v){x=(x+v)%MOD;if(x<0)x+=MOD;}
 /*}}}*/
 const int SIZE = 1e6+10;
 int main(){
-    int n;
-    _R(n);
-    n = n - 10;
-    if(n <= 0) _W(0);
-    else if(n < 10 || n == 11) _W(4);
-    else if(n == 10) _W(15);
-    else _W(0);
+    int tes;
+    _R(tes);
+    REP(i, tes){
+        string s, t;
+        cin>>s;
+        cin>>t;
+        if(s.size() != t.size()){
+            _W("NO\n");
+            continue;
+        }
+        int flag = 0;
+        REP(j, s.size()){
+            REP(k, t.size()){
+                if(s[j] == t[k]){
+                    flag = 1;
+                    break;
+                }
+            }
+            if(flag == 1) break;
+        }
+        if(flag) _W("YES\n");
+        else _W("NO\n");
+    }
 
     return 0;
 }
